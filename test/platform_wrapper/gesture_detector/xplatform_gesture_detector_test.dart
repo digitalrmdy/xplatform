@@ -22,8 +22,6 @@ void main() {
       )),
     );
 
-    debugDumpApp();
-
     expect(find.byWidget(childWidget), findsOneWidget);
     expect(find.byType(InkWell), findsOneWidget);
   });
