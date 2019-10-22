@@ -5,7 +5,7 @@ import 'package:xplatform/platform_wrapper/gesture_detector/xplatform_gesture_de
 import 'package:xplatform/platform_wrapper/platform.dart';
 
 void main() {
-  testWidgets('wiget has an Inkwell when on a Material environment',
+  testWidgets('widget has an Inkwell when on a Material environment',
       (WidgetTester tester) async {
     PlatformWrapper.overridePlatform(WrapperPlatform.Material);
 
@@ -26,7 +26,7 @@ void main() {
     expect(find.byType(InkWell), findsOneWidget);
   });
 
-  testWidgets('wiget has an GestureDetector when on a Cupertino environment',
+  testWidgets('widget has an GestureDetector when on a Cupertino environment',
       (WidgetTester tester) async {
     PlatformWrapper.overridePlatform(WrapperPlatform.Cupertino);
 
