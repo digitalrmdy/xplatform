@@ -13,7 +13,7 @@ class XPlatformGestureDetector extends StatelessWidget {
   ///
   /// The [onTap] and [child] arguments must not be
   /// null.
-  XPlatformGestureDetector({@required this.onTap, @required this.child});
+  XPlatformGestureDetector({required this.onTap, required this.child});
 
   @override
   Widget build(BuildContext context) {

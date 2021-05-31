@@ -1,11 +1,12 @@
 import 'dart:io';
 
 class PlatformWrapper {
-
-  static WrapperPlatform _overridePlatform;
+  static WrapperPlatform? _overridePlatform;
 
   static bool get isCupertino {
-    return _overridePlatform == null ? Platform.isIOS : _overridePlatform == WrapperPlatform.Cupertino;
+    return _overridePlatform == null
+        ? Platform.isIOS
+        : _overridePlatform == WrapperPlatform.Cupertino;
   }
 
   static overridePlatform(WrapperPlatform platform) {
@@ -15,13 +16,9 @@ class PlatformWrapper {
   static clearOverride() {
     _overridePlatform = null;
   }
-
 }
 
 enum WrapperPlatform {
-  Material, Cupertino,
+  Material,
+  Cupertino,
 }
-
-
-
-
